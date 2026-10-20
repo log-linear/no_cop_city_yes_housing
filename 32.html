@@ -37,11 +37,16 @@ h1{margin:0 0 clamp(1.5rem,4vw,2.5rem);color:var(--ink);font-weight:400;
 .tile--dark .lab{color:var(--on-dark)}
 .arrow{flex:0 0 auto;width:clamp(2.5rem,7vw,4.5rem)}
 .arrow img{display:block;width:100%;height:auto}
-.note{margin:clamp(1.25rem,3vw,1.9rem) auto 0;max-width:40rem;
+.block{margin-top:clamp(1.75rem,4.5vw,2.75rem)}
+.block h2{margin:0 0 clamp(.75rem,2vw,1.1rem)}
+.note{margin:0 auto;max-width:40rem;
   background:var(--green);border-radius:clamp(.3rem,.8vw,.6rem);text-align:center;
   color:var(--ink);padding:clamp(.85rem,2.4vw,1.3rem) clamp(1rem,3vw,1.6rem);
   font-size:clamp(.95rem,2vw,1.15rem);line-height:1.4}
 .note strong{font-weight:700}
+.note ul{margin:0;padding-left:1.25rem;text-align:left}
+.note li{margin:0 0 .45rem}
+.note li:last-child{margin-bottom:0}
 .ballot{margin-top:clamp(2rem,5vw,3.25rem);text-align:center}
 h2{margin:0 0 clamp(1rem,3vw,1.6rem);color:var(--rust);font-weight:400;
   font-family:"Bowlby One SC",Impact,"Arial Black",sans-serif;
@@ -78,7 +83,23 @@ h2{margin:0 0 clamp(1rem,3vw,1.6rem);color:var(--rust);font-weight:400;
     </div>
   </div>
 
-  <p class="note"><strong>About $5 a month</strong> for a median Dallas County home (about $64 a year). No borrowing, no interest.</p>
+  <section class="block">
+    <h2>What it costs</h2>
+    <p class="note"><strong>About $5 a month</strong> for a median Dallas County home (about $64 a year). No borrowing, no interest.</p>
+  </section>
+
+  <section class="block">
+    <h2>What it pays for</h2>
+    <div class="note">
+      <ul>
+        <li>Eviction legal defense against bad landlords</li>
+        <li>Care instead of jail</li>
+        <li>Mental health resources for our neighbors in need</li>
+        <li>A bridge to a home</li>
+        <li>Childcare for families getting back on their feet</li>
+      </ul>
+    </div>
+  </section>
 
   <section class="ballot">
     <h2>what you&rsquo;ll see on your ballot:</h2>
